@@ -19,6 +19,6 @@ public class JamesRestController2
 	@GetMapping("/bye")
 	public String wish2() {
 		LOG.info("inside bye endpoint");
-		return "Welcome to REST API";
+		return "Welcome to REST API 2";
 	}
 }
