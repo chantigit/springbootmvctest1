@@ -13,7 +13,12 @@ public class RestController1
 	public static Logger LOG=LoggerFactory.getLogger(RestController1.class);
 	@GetMapping("/wish")
 	public String wish() {
-		LOG.info("inside restcontroller");
+		LOG.info("inside wish endpoint");
+		return "Welcome to REST API";
+	}
+	@GetMapping("/bye")
+	public String wish2() {
+		LOG.info("inside bye endpoint");
 		return "Welcome to REST API";
 	}
 }
