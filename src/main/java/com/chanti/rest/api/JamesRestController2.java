@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class JamesRestController2 
 {
 	public static Logger LOG=LoggerFactory.getLogger(JamesRestController2.class);
-	@GetMapping("/wish")
+	@GetMapping("/endpoint1")
 	public String wish() {
 		LOG.info("inside wish endpoint");
 		return "Welcome to REST API 4";
 	}
-	@GetMapping("/bye")
+	@GetMapping("/endpoint2")
 	public String wish2() {
 		LOG.info("inside bye endpoint");
 		return "Welcome to REST API ";
